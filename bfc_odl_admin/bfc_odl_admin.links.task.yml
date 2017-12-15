@@ -1,0 +1,17 @@
+resume.tab_1:
+  route_name : bfc_odl_admin.organisationForm
+  title: 'Moissonnage'
+  base_route: bfc_odl_admin.organisationForm
+  weight: 10
+
+resume.tab_2:
+  route_name: bfc_odl_admin.selectionForm
+  title: 'Sélection'
+  base_route: bfc_odl_admin.organisationForm
+  weight: 20
+  
+resume.tab_3:
+  route_name: bfc_odl_admin.ckanForm
+  title: 'Ckan'
+  base_route: bfc_odl_admin.organisationForm
+  weight: 20

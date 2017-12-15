@@ -1,0 +1,349 @@
+#main.widget-opendata
+{
+	border-style: solid;
+    border-color: #1e7594 ;
+    border-radius: 5px;
+	padding: 3px;
+}
+
+
+#main.widget-opendata .navbar
+{
+	text-align : center;
+}
+#main.widget-opendata .navbar ul
+{
+	display : inline-block;
+	float : none;
+	cursor: pointer;
+}
+
+#main.widget-opendata .navbar a
+{
+	color : rgb(35,135,171);
+}
+#main.widget-opendata .container
+{
+	width : 100%;
+	
+}
+
+#main.widget-opendata .container .navbar li:first-child {
+	border-left: 1px solid #2387ab;
+}
+
+#main.widget-opendata .container .navbar li:last-child {
+	border-right: 1px solid #2387ab;
+}
+
+#main.widget-opendata .container .navbar li {
+	border-top: 1px solid #2387ab;
+	border-bottom: 1px solid #2387ab;
+	border-right: 1px solid #95d3e9;
+}
+
+#main.widget-opendata .container .navbar li a
+{
+	padding: 15px 30px;
+}
+#main.widget-opendata .navbar .active
+{
+	# border-bottom: solid 3px rgb(35,135,171);
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #2387ab;
+}
+#main.widget-opendata .navbar .active a {
+	color: #ffffff;
+}
+
+#main.widget-opendata .navbar-nav .disabled {
+	background-color: #edeeef;
+}
+
+#main.widget-opendata .navbar-nav li.disabled a {
+	color: #777;
+}
+
+#main.widget-opendata ul
+{
+	list-style: none;
+}
+
+#main.widget-opendata .container h1, .container h2, .container h3
+{
+	color: rgb(35,135,171) !important;
+}
+
+#main.widget-opendata .container h1 {
+	font-size: 1.7em;
+}
+
+#main.widget-opendata .container h2 {
+	font-size: 1.5em;
+}
+
+#main.widget-opendata .container h3 {
+	font-size: 1.3em;
+}
+
+
+#main.widget-opendata .infos h3
+{
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+#main.widget-opendata .infos button
+{
+	margin-bottom: 10px;
+}
+#main.widget-opendata .well
+{
+	margin-top: 15px;
+	margin-left : 0px;
+	margin-right: 0px;
+}
+
+#main.widget-opendata .tag
+{
+	background-color: rgb(35,135,171);
+	color: white;
+	border : solid 1px rgb(35,135,171);
+	border-radius: 4px;
+	padding: 3px;
+	font-size: 13px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	display: inline-block;
+}
+
+#main.widget-opendata .tag:hover
+{
+	cursor:pointer;
+}
+
+#resources
+{
+	margin-bottom: 50px;
+}
+
+#main.widget-opendata h3 .glyphicon
+{
+	font-size: 18px;
+}
+
+#main.widget-opendata li.col-md-2 {
+    padding-bottom: 3px;
+}
+
+#main.widget-opendata li.col-md-10 {
+    padding-bottom: 3px;
+}
+
+
+#main.widget-opendata .titreDepliant
+{
+	opacity: 0.8;
+}
+
+#main.widget-opendata .titreDepliant:hover
+{
+	opacity: 1;
+}
+
+#main.widget-opendata #listeFichier
+{
+	/*display: none;*/
+}
+
+#main.widget-opendata #listeFichier ul
+{
+	padding-left: 0px;
+	min-height : 50px;
+	height : auto;
+	/*box-shadow: 0px 0px 5px 0px #888888;*/
+	display : flex;
+}
+
+#main.widget-opendata .fichier
+{
+	font-weight: bold;
+}
+
+#main.widget-opendata .description
+{
+	font-weight : normal;
+	margin-top: 5px;
+	margin-bottom : 0px;
+}
+
+#main.widget-opendata .format
+{
+	background-color: black;
+	border-radius: 5px;
+	padding: 2px 4px;
+	/*margin-right: 5px;*/
+	display: inline-block;
+	width : auto;
+	height : 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    color: rgb(255, 255, 255);
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
+}
+
+#main.widget-opendata .formatFichier
+{
+	align-self : center;
+	text-align : center;
+	width : 20%;
+}
+
+#main.widget-opendata .format[data-format="json"], 
+#main.widget-opendata .format[data-format*="json"] {
+    background-color: rgb(239, 113, 0);
+}
+#main.widget-opendata format[data-format="html"], 
+#main.widget-opendata .format[data-format*="html"] {
+    background-color: rgb(85, 161, 206);
+}
+#main.widget-opendata format[data-format="xls"], 
+#main.widget-opendata .format[data-format*="xls"] {
+    background-color: rgb(45, 181, 93);
+}
+#main.widget-opendata format[data-format="csv"], 
+#main.widget-opendata .format[data-format*="csv"] {
+    background-color: rgb(223, 177, 0);
+}
+#main.widget-opendata format[data-format="wfs"] {
+    background-color: rgb(122, 174, 61);
+}
+#main.widget-opendata format[data-format="geojson"] {
+    background-color: rgb(152, 85, 224);
+}
+#main.widget-opendata format[data-format="xml"], 
+#main.widget-opendata .format[data-format*="xml"] {
+    background-color: rgb(50, 50, 50);
+}
+#main.widget-opendata format[data-format="shp"], 
+#main.widget-opendata .format[data-format*="shp"] {
+    background-color: rgb(216, 52, 23);
+}
+
+
+#main.widget-opendata #listeReuses
+{
+	/*display: none;*/
+}
+
+#main.widget-opendata .reuse
+{
+	box-shadow: 2px 2px 2px 2px #888888;
+	height : 250px;
+	padding : 0px;
+	margin-right : 20px;
+	margin-bottom : 15px;
+}
+
+#main.widget-opendata .reuse img
+{
+	height: 100%;
+    width: auto;
+    padding-top: 5px;
+}
+
+
+#main.widget-opendata .show
+{
+	height : 70%;
+	text-align: center;
+}
+
+#main.widget-opendata .reuse .descriptionImage
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,.6);
+	color : white;
+	overflow: hidden;
+	height : 70%;
+	width : 100%;
+	margin-top: 0px;
+	font-size: 16px;
+	padding: 10px;
+	display: none;
+}
+
+#main.widget-opendata .reuse .titre
+{
+	height: 15%;
+	overflow-y: hidden;
+	margin-top: 5px;
+	margin-bottom : 5px;
+	font-weight: bold;
+	padding-left:3px;
+}
+
+#main.widget-opendata .reuse .auteur
+{
+	height: 15%;
+	padding-left:3px;
+}
+
+#main.widget-opendata .map-visu, .table-visu{
+	width: 100%;
+ }
+
+#main.widget-opendata  .chart-visu{
+	width: 100%;
+ }
+
+
+#main.widget-opendata .map-visu .inner, .table-visu .inner, .chart-visu .inner{
+	width: 100%;
+	position: relative;
+	border: none;
+	/*display: none;*/
+	
+}
+
+#main.widget-opendata .map-visu .inner, .table-visu .inner{
+ 	text-align: left;
+ 	text-align: -webkit-left;
+	text-align: -moz-left;
+}
+
+#main.widget-opendata .chart-visu .inner{
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+#main.widget-opendata .map-visu h3, .table-visu h3, .chart-visu h3{
+	text-align: left;
+	text-align: -webkit-left;
+	text-align: -moz-left;
+ }
+
+#main.widget-opendata .visualisation{
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	padding-left : 15px;
+	padding-right : 15px;
+}
+
+#main.widget-opendata  .visualisation * {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+		   
+
+#main.widget-opendata .bg-info {
+    background-color: #eee;
+}

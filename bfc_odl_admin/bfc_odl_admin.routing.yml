@@ -1,0 +1,39 @@
+bfc_odl_admin.organisationForm:
+ path: '/admin/config/search/organisationForm'
+ defaults:
+   _title: 'Organisations'
+   _form: 'Drupal\bfc_odl_admin\Form\organisationForm'
+ requirements:
+   _permission: 'access content'
+
+bfc_odl_admin.selectionForm:
+  path: '/admin/config/search/selection'
+  defaults:
+    _form: 'Drupal\bfc_odl_admin\Form\selectionForm'
+    _title: 'Sélection'
+  requirements:
+    _permission: 'access content'
+ 
+bfc_odl_admin.ckanForm:
+  path: '/admin/config/search/ckan'
+  defaults:
+    _form: 'Drupal\bfc_odl_admin\Form\ckanForm'
+    _title: 'Choix du serveur Ckan'
+  requirements:
+    _permission: 'access content'
+
+bfc_odl_admin.portail:
+  path: '/bfc/portail'
+  defaults:
+    _controller: '\Drupal\bfc_odl_admin\Controller\portailController::myPage'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+    
+bfc_odl_admin.visualisation:
+  path: '/bfc/visualisation'
+  defaults:
+    _controller: '\Drupal\bfc_odl_admin\Controller\VisualisationController::myPage'
+    _title: ''
+  requirements:
+    _permission: 'access content'

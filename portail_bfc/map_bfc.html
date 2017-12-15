@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/ol.js"></script>
+		<script type="text/javascript" src="js/d3.min.js"></script>
+		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/map_bfc.js"></script>
+		<link rel="stylesheet" href="css/map_bfc.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <script type="text/javascript" src="js/map_bfc.js"></script>
+		<link rel="stylesheet" href="css/map_bfc.css"> -->
+	</head>
+	<body>
+		<div id="mapPanel" class="main">
+
+			<div id="map" class="map">
+				<div class="mapInfo" ></div>
+			</div>
+
+			<div id="info" class="info"></div>
+			<div class="bckPanel">
+				<img class="btnBackground" src="img/ic_map_layers_64.png" alt="Fond de Carte" onclick="$('#layers-panel').show();"/>
+			</div>
+			<div id="layers-panel" class="layersMenu" style="display:none" onmouseleave="$(this).hide()">
+				<ul class="layersList">
+					<li onclick="changeTile('none')">&lt;Pas de fond de carte&gt;</li>
+					<li onclick="changeTile('local-tile')">Local Tile</tli>
+					<li onclick="changeTile('osm')">OSM</tli>
+					<!-- <li onclick="changeTile('watercolor')">WaterColor</li> -->
+					<li onclick="changeTile('toner')">Toner</li>
+					<li onclick="changeTile('toner-lite')">Toner-Lite</li>
+				</ul>
+			</div>
+			<div class=float-panel>
+				<div class="caption-panel">
+					<ul class="caption-list">
+						<!--<li class="caption-item">
+							<div class="caption-img">
+								<div class="caption-point" style="background-color: green"></div>
+							</div>
+							<span class="caption-label">Sous le vent</span>
+						</li>
+						<li class="caption-item">
+							<div class="caption-img">
+								<div class="caption-line" style="background-color: lightblue"></div>
+							</div>
+							<span class="caption-label">OOO</span>
+						</li>
+						<li class="caption-item">
+							<div class="caption-img">
+								<div class="caption-background" style="background-color: orange"></div>
+							</div>
+							<span class="caption-label">GGG</span>
+						</li>-->
+					</ul>
+				</div>
+
+				<div class="data-panel">
+					<ul class="data-list">
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+		<script>
+			var url = getUrl("url");
+			var format = getUrl("format");
+
+			var data = '{"levels":[], "minLat":46.00532496697866, "maxLat":48.53549206567581, "minLong":-0.9306642172507187, "maxLong":10.80273422024928, "lat":47.28553336245761, "long":4.936035001499281, "zoom":8, "maptype":"polygon"}';
+			renderComplexMap("map", data, "VALEUR");
+			resizeMap();
+			initTooltip();
+			
+			var features,
+			properties = [], allProperties = [];
+
+			//loadMapData("https://inspire.data.gouv.fr/api/geogw/services/5985e50782a4a5951269aefe/feature-types/ms:ShemadAmenagementetdeGestionde/download?format=GeoJSON&projection=WGS84", "GeoJSON");
+			//loadMapData("data/n_roe_v6_p_r27.json", "GeoJSON");
+			loadMapData(url, format);
+			//createD3Layer("");
+		</script>
+	</body>
+</html>

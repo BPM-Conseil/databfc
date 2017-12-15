@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/map_bfc.css">
+		
+	</head>
+	<body>
+		<div class="choice col-md-3 col-sm-3 col-xs-12 col-lg-3">
+			<div id="choice-type">
+				<span class="chart-select-label">Type</span>
+				<select id="choice-type-select" class="table-per-page-select" onchange="onChangeType()">
+					<option value="repartition">Répartition</option>
+					<option value="valeurs">Valeurs</option>
+				</select>
+			</div>
+			<div id="choice-x">
+				<span class="chart-select-label">Axe X</span>
+				<select id="choice-x-select" class="table-per-page-select" onchange="onChangeX()">
+
+				</select>
+			</div>
+			<div id="choice-y-type">
+				<span class="chart-select-label">Type Y</span>
+				<select id="choice-y-type-select" class="table-per-page-select" onchange="onChangeYType()">
+					<option value="count">Count</option>
+					<option value="sum">Sum</option>
+				</select>
+			</div>
+			<div id="choice-y">
+				<span class="chart-select-label">Axe Y</span>
+				<select id="choice-y-select" class="table-per-page-select" onchange="onChangeY()">
+
+				</select>
+			</div>
+ 		</div>
+		<div class="col-md-9 col-sm-9 col-xs-12 col-lg-9">
+			 <svg class="chart" width="1000" height="500"></svg>
+ 		</div>
+	   
+
+	    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/d3.min.js"></script>
+		<script type="text/javascript" src="js/ol.js"></script>
+		<script type="text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/pagination.js"></script>
+		<script type="text/javascript" src="js/shp.js"></script>
+		<script type="text/javascript" src="js/xlsx.full.min.js"></script>
+		<script type="text/javascript" src="js/map_bfc.js"></script>
+		<script>
+			var url = getUrl("url");
+			var format = getUrl("format");
+			var features,
+			properties = [], allProperties = [];
+			//loadChartData("n_roe_v6_p_r27.json", "GeoJSON");
+			//loadChartData("tableau_pret_oeuvre_open_data.xls", "XLS");
+			loadChartData(url, format);
+
+		</script>
+	</body>
+</html>

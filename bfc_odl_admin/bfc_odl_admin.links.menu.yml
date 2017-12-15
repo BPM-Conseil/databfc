@@ -1,0 +1,12 @@
+bfc_odl_admin.settings_form:
+  title: Administration Open Data
+  description: 'Configuration'
+  route_name: bfc_odl_admin.organisationForm
+  parent: system.admin_config_search
+  
+hello.demo:
+  title: 'Recherche de données'
+  description: 'Recherche jeux de données'
+  parent: main
+  menu_name: main
+  route_name: bfc_odl_admin.portail

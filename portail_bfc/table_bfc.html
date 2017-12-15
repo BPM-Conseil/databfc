@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/map_bfc.css">
+		
+	</head>
+	<body>
+		<div class="row">
+			<div class="table-per-page">
+				<span class="table-per-page-label">Nombre de lignes visibles </span>
+				<select id="table-per-page" class="table-per-page-select" onchange="initPagination()">
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="50" selected="selected">50</option>
+					<option value="100">100</option>
+					<option value="500">500</option>
+				</select>
+			</div>
+			<div class="table-filter">
+				<span id="table-filter" class="table-search">Filtre: 
+					<input type="search" id="table-query-search" onkeyup="initPagination()">
+				</span>
+			</div>
+ 		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table id="table" class="table table-bordered table-striped table-hover">
+
+				</table> 
+			</div>
+ 		</div>
+		
+		
+		<div class="row">
+	        <nav id="pagination">
+	            <ul class="pagination">
+	            <!-- <li class="disabled"><a aria-label="Previous" class="disabled"><span aria-hidden="true">«</span></a></li><li class="active"><a class="page_link">1</a></li><li><a class="page_link">2</a></li><li><a class="page_link">3</a></li><li><a class="page_link">4</a></li><li><a aria-label="Next"><span aria-hidden="true">»</span></a></li> -->
+	            </ul>
+	        </nav>
+	    </div>
+
+	    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/d3.min.js"></script>
+		<script type="text/javascript" src="js/ol.js"></script>
+		<script type="text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/pagination.js"></script>
+		<script type="text/javascript" src="js/shp.js"></script>
+		<script type="text/javascript" src="js/xlsx.full.min.js"></script>
+		<script type="text/javascript" src="js/map_bfc.js"></script>
+		<script>
+			var url = getUrl("url");
+			var format = getUrl("format");
+			var features,
+			properties = [], allProperties = [];;
+
+			//loadTabData("n_roe_v6_p_r27.json", "GeoJSON");
+			//loadTabData("tableau_pret_oeuvre_mba.csv", "CSV");
+			//loadTabData("tableau_pret_oeuvre_open_data.xls", "XLS");
+			//loadTabData("prets_oeuvres_MBA.txt", "TXT");
+			loadTabData(url, format);
+
+		</script>
+	</body>
+</html>
