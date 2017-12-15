@@ -2,9 +2,9 @@ DATABFC - Module Drupal de publication Open Data
 ================================================
 
 **Module d'intégration Drupal / CKAN pour publication de données Open Data**
-L'intégration dans le CMS Drupal se fait sous la forme d'un module et de fichiers permettant de rechercher et consulter des jeux de données Open Data stockés dans une instance CKAN dans le CMS.
+L'intégration dans le CMS Drupal se fait sous la forme d'un module et de fichiers permettant de rechercher et consulter des jeux de données Open Data stockés dans une instance CKAN.
 
-La recherche et la consultation de jeux de données peut également être intégrée sous forme de widget dans un site tiers.
+Les fonctionnalités de recherche et de consultation des jeux de données Open Data peuvent être intégrées sous forme de widget dans un site tiers.
 
 Un site utilisant ce module peut être consulté à l'adresse suivante : `Data BFC <https://www.databfc.fr>`_ 
 
@@ -14,9 +14,8 @@ Installation
 
 L'intégration dans Drupal se fait sous la forme d'un module et de fichiers permettant au site Drupal de servir d'interface de recherche pour un portail CKAN
 
-Les fonctionnalités de recherche et de consultation des jeux de données Open Data peuvent être intégrées sous forme de widget dans un site tiers.
 
-Consulter la page `Installation <https://github.com/BPM-Conseil/INSTALLATION.rst>`_ pour des instructions d'installation détaillées.
+Consulter la page `Installation <https://github.com/BPM-Conseil/databfc/INSTALLATION.rst>`_ pour des instructions d'installation détaillées.
 
 
 Licence
