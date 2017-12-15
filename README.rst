@@ -15,7 +15,7 @@ Installation
 L'intégration dans Drupal se fait sous la forme d'un module et de fichiers permettant au site Drupal de servir d'interface de recherche pour un portail CKAN
 
 
-Consulter la page `Installation <https://github.com/BPM-Conseil/databfc/INSTALLATION.rst>`_ pour des instructions d'installation détaillées.
+Consulter la page `Installation <https://github.com/BPM-Conseil/databfc/blob/master/INSTALLATION.rst>`_ pour des instructions d'installation détaillées.
 
 
 Licence
