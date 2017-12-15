@@ -20,11 +20,11 @@ Le module a été validé avec **CKAN version 2.7.0**
 Intégration dans Drupal
 -----------------------
 
-Copier le dossier `//bfc_odl_admin` dans le répertoire `modules` de votre installation Drupal
+Copier le dossier **/bfc_odl_admin** dans le répertoire `modules` de votre installation Drupal
 
-Copier le dossier `//portail_bfc` dans le répertoire `sites//default/files/api` de votre installation Drupal
+Copier le dossier **/portail_bfc** dans le répertoire `sites//default/files/api` de votre installation Drupal
 
-Activer le module bfc_odl_admin dans le menu Extension de Drupal
+Activer le module **bfc_odl_admin** dans le menu Extension de Drupal
 
 Accéder au menu Configuration > Administration Open Data.
 Cliquer sur l'onglet **Ckan** pour définir l'URL et la clé API de l'instance CKAN utilisée comme cache local.
